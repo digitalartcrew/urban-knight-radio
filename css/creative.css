@@ -1,35 +1,153 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /*Additonal CSS*/
- .tuner-body .profile-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.1);
-},
-.bg-primary {
-    /* background-color: #000; */
+.sgplayer {
+  margin-top: 100px;
+  margin-left: 500px;
 },
 
-/*#ukr {
-    margin-top: 400px;
-    width: 500px;
-},*/
+#services {
+  background-color: #fff;
+},
+
+#sports {
+  background-color: #000;
+}
+
+
+@mixin breakpoint($media) {
+  @if $media == chicago {
+    @media (min-width: 767px) { @content; }
+  }
+  @else if $media == los-angeles {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
+.social-icons-services {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.social-figure {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100px;
+  overflow: hidden;
+  @include breakpoint(chicago) {
+    width: 20%;
+    height: 150px;
+  }
+  @include breakpoint(los-angeles) {
+    width: 20%;
+    height: 200px;
+  }
+}
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 2em;
+  color: white;
+  display: block;
+  text-align: center;
+  @include breakpoint(chicago) {
+    font-size: 4em;
+  }
+  @include breakpoint(los-angeles) {
+    font-size: 6em;
+  }
+}
+.facebook {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #CF4430;
+  @include transition(0.3s);
+}
+.twitter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #34495E;
+  @include transition(0.3s);
+} 
+.gplus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: green;
+  @include transition(0.3s);
+}
+.pinterest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #25b695;
+  @include transition(0.3s);
+}
+.vimeo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #CF4430;
+  @include transition(0.3s);
+}
+.social-hover {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: -200px;
+  left: 0;
+  background: #0b337d;
+  @include transition(0.3s);
+}
+.social-figure:hover .facebook {
+  top: 200px;
+}
+.social-figure:hover .social-hover {
+  top: 0;
+}
+.social-figure:hover .twitter {
+  top: 200px;
+}
+.social-figure:hover .gplus {
+  top: 200px;
+}
+.social-figure:hover .pinterest {
+  top: 200px;
+}
+.social-figure:hover .vimeo {
+  top: 200px;
+}
+.social-figure:hover .social-hover {
+  top: 0;
+}
 /*Additonal CSS End*/
 
 html,
 body {
   height: 100%;
   width: 100%;
-}
-body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
+ /* background-color: #000;*/
+  /*color: #fff;*/
+},
+
 hr {
   border-color: #F05F40;
   border-width: 3px;
