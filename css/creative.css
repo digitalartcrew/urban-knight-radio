@@ -5,151 +5,35 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /*Additonal CSS*/
-.sgplayer {
-  margin-top: 100px;
-  margin-left: 500px;
-},
-
-#services {
-  background-color: #fff;
-},
-
-#sports {
-  background-color: #000;
-}
 
 
-@mixin breakpoint($media) {
-  @if $media == chicago {
-    @media (min-width: 767px) { @content; }
-  }
-  @else if $media == los-angeles {
-    @media (min-width: 1024px) { @content; }
-  }
-}
-
-.social-icons-services {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-.social-figure {
-  position: relative;
+#heart {
   float: left;
-  width: 20%;
-  height: 100px;
-  overflow: hidden;
-  @include breakpoint(chicago) {
-    width: 20%;
-    height: 150px;
-  }
-  @include breakpoint(los-angeles) {
-    width: 20%;
-    height: 200px;
-  }
+  margin-top: 80px;
+
 }
 
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-  font-size: 2em;
-  color: white;
-  display: block;
-  text-align: center;
-  @include breakpoint(chicago) {
-    font-size: 4em;
+ @media (max-width: 600px){
+  #heart {
+    margin-top: -50px;
+    float: left;
+  },
+  #findus {
+    margin-top: 100px;
+    color: #fff;
   }
-  @include breakpoint(los-angeles) {
-    font-size: 6em;
-  }
-}
-.facebook {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: #CF4430;
-  @include transition(0.3s);
-}
-.twitter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: #34495E;
-  @include transition(0.3s);
-} 
-.gplus {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: green;
-  @include transition(0.3s);
-}
-.pinterest {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: #25b695;
-  @include transition(0.3s);
-}
-.vimeo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: #CF4430;
-  @include transition(0.3s);
-}
-.social-hover {
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  top: -200px;
-  left: 0;
-  background: #0b337d;
-  @include transition(0.3s);
-}
-.social-figure:hover .facebook {
-  top: 200px;
-}
-.social-figure:hover .social-hover {
-  top: 0;
-}
-.social-figure:hover .twitter {
-  top: 200px;
-}
-.social-figure:hover .gplus {
-  top: 200px;
-}
-.social-figure:hover .pinterest {
-  top: 200px;
-}
-.social-figure:hover .vimeo {
-  top: 200px;
-}
-.social-figure:hover .social-hover {
-  top: 0;
-}
-/*Additonal CSS End*/
+ }
 
 html,
 body {
   height: 100%;
   width: 100%;
- /* background-color: #000;*/
-  /*color: #fff;*/
+
+
 },
 
 hr {
-  border-color: #F05F40;
+  border-color: #FF0000;
   border-width: 3px;
   max-width: 50px;
 }
@@ -160,11 +44,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: #FF0000;
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: red;
 }
 h1,
 h2,
@@ -207,14 +91,14 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #FF0000;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
+  color: red;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -231,11 +115,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #FF0000;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #FF0000 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -267,12 +151,12 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #FF0000;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: red;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -280,7 +164,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #FF0000;
   }
 }
 header {
@@ -349,7 +233,7 @@ header .header-content .header-content-inner p {
   margin-top: 0;
 }
 .service-box {
-  max-width: 400px;
+  max-width: 408px;
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {
@@ -370,7 +254,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: red;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -418,7 +302,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: #FF0000;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -474,8 +358,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #FF0000;
+  border-color: #FF0000;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -513,11 +397,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #FF0000;
+  border-color: #FF0000;
 }
 .btn-primary .badge {
-  color: #F05F40;
+  color: #FF0000;
   background-color: white;
 }
 .btn {
@@ -550,4 +434,122 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.sgplayer {
+  margin-top: 300px;
+},
+
+#iheart {
+    margin-left: -800px;
+    margin-top: 60px;
+},
+
+#services {
+    background-color: red;
+    color: white;
+},
+
+#sports {
+  background-color: #000;
+}
+
+/*------ Mixins -----*/
+@mixin border-radiuses($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  -webkit-border-top-right-radius:    $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius:  $bottomleft;
+  -webkit-border-top-left-radius:     $topleft;
+
+  -moz-border-radius-topright:        $topright;
+  -moz-border-radius-bottomright:     $bottomright;
+  -moz-border-radius-bottomleft:      $bottomleft;
+  -moz-border-radius-topleft:         $topleft;
+
+  border-top-right-radius:            $topright;
+  border-bottom-right-radius:         $bottomright;
+  border-bottom-left-radius:          $bottomleft;
+  border-top-left-radius:             $topleft;
+
+  -moz-background-clip:    padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip:         padding-box; 
+}
+/*--------- End Mixins ---------*/
+.bg {
+  position:fixed;
+  z-index:-999999;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:lighten(#b2b2b2,5%);
+  @include box-shadow(inset 0px 0px 100px 15px rgba(183,183,183,.75));
+  background-color: rgb(255,255,255);
+  @include filter-gradient(#ffffff, #e8e8e8, horizontal);
+  @include background-image(radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(232,232,232,1) 100%));
+
+}
+.wrapper {
+  width:500px;
+  margin: 100px auto 0 auto;
+}
+
+.wrapper-top {
+  width:500px;
+  margin-top: 50px;
+  float: right;
+}
+.sm {
+  width: 100%;
+  height:60px;
+  margin:0 auto;
+  
+}
+.smi {
+  border:1px solid darken(#000000,10%);
+  height:60px;
+  width:60px;
+  display:inline-block;
+  /*background:#fff;*/
+/*  float:left;*/
+}
+.smi:nth-of-type(1), .fb {
+  @include border-radiuses(0,0,3px,3px);
+  border-right:0;
+  background:url("http://grantcr.com/files/fbnorm.png") center center no-repeat;
+  background-color:transparent;
+  @include box-shadow(-1px -1px 1px #e2e2e2);
+}
+.smi:nth-of-type(2), .tw {
+  background:url("http://grantcr.com/files/twnorm.png") center center no-repeat;
+  background-color:transparent;
+  @include box-shadow(0px -1px 1px #e2e2e2);
+}
+.smi:nth-of-type(3), .rss {
+  @include border-radiuses(3px,3px,0,0);
+  border-left:0;
+  background:url("http://grantcr.com/files/rssnorm.png") center center no-repeat;
+  background-color: transparent;
+  @include box-shadow(1px -1px 1px #e2e2e2);
+}
+
+.fb:hover {
+  background-color:#4463a5;
+  background-image:url("http://grantcr.com/files/fbhover.png");
+  background-position:center center;
+  border-right-color:#e5e5e5;
+  
+}
+.tw:hover {
+  background-color:#0ab4f2;
+  background-image:url("http://grantcr.com/files/twhover.png");
+  background-position:center center;
+  border-color:#e1e1e1;
+}
+.rss:hover {
+  background-color:#ff7e2b;
+  background-image:url("http://grantcr.com/files/rsshover.png");
+  background-position:center center;
+  border-left-color:#e5e5e5;
 }
