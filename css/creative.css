@@ -7,33 +7,86 @@
 /*Additonal CSS*/
 
 
-#heart {
+/*#heart {
   float: left;
   margin-top: 80px;
+}*/
 
+/*#listen {
+  float: left;
+}*/
+
+/*iframe:hover {
+  background-color: red;
+}*/
+
+/*.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+}*/
+
+#director {
+  margin: 0 auto;
 }
 
- @media (max-width: 600px){
-  #heart {
-    margin-top: -50px;
-    float: left;
-  },
-  #findus {
-    margin-top: 100px;
-    color: #fff;
+.embed-responsive: hover {
+  color: #fff;
+}
+
+.text-muted {
+  color: #fff;
+}
+
+.sgplayer {
+  width:100%; 
+  height:124px;
+  margin-top: 700px;
+/*  margin-left: -380px;*/
+/*  display:inline-block;*/
+},
+
+
+
+
+
+ @media (max-width: 370px){
+  .sgplayer {
+   margin-top: 300px;
+   margin-left: -45px;
   }
- }
+ },
+
+
+/* @media only screen 
+    and (min-device-width : 375px) // or 213.4375em or 3in or 9cm
+    and (max-device-width : 667px) // or 41.6875em
+    and (width : 667px) // or 41.6875em
+    and (height : 375px) // or 23.4375em
+    and (orientation : landscape) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 667/375)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+    
+ \
+}*/
+
+
 
 html,
 body {
   height: 100%;
-  width: 100%;
+/*  width: 100%;*/
 
 
 },
 
 hr {
-  border-color: #FF0000;
+  border-color: #8D392F;
   border-width: 3px;
   max-width: 50px;
 }
@@ -44,24 +97,28 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #FF0000;
+  color: #fff;
 }
 a:hover,
 a:focus {
   color: red;
 }
 h1,
-h2,
-h3,
+
+h2,.h3, h3 {
+    font-size: 24px;
+    color: #fff;
+},
 h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
 }
 .bg-primary {
   background-color: #000;
@@ -75,6 +132,9 @@ p {
 }
 section {
   padding: 100px 0;
+  background-color: #050004;
+background-image: url("https://www.transparenttextures.com/patterns/church.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 aside {
   padding: 50px 0;
@@ -91,7 +151,7 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #FF0000;
+  color: #8D392F;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -115,11 +175,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #FF0000;
+  color: #8D392F;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #FF0000 !important;
+  color: #8D392F !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -151,7 +211,7 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #FF0000;
+    color: #8D392F;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -164,7 +224,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #FF0000;
+    color: #8D392F;
   }
 }
 header {
@@ -302,7 +362,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #FF0000;
+  color: #8D392F;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -358,8 +418,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: white;
-  background-color: #FF0000;
-  border-color: #FF0000;
+  background-color: #8D392F;
+  border-color: #8D392F;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -397,11 +457,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #FF0000;
-  border-color: #FF0000;
+  background-color: #8D392F;
+  border-color: #8D392F;
 }
 .btn-primary .badge {
-  color: #FF0000;
+  color: #8D392F;
   background-color: white;
 }
 .btn {
@@ -436,9 +496,9 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
-.sgplayer {
+/*.sgplayer {
   margin-top: 300px;
-},
+},*/
 
 #iheart {
     margin-left: -800px;
@@ -453,6 +513,31 @@ body {
 #sports {
   background-color: #000;
 }
+
+.fa {
+  color: #fff;
+}
+.fa-3x {
+  color: #fff;
+}
+
+.fa-3x:hover {
+  color: grey;
+}
+
+img:hover {
+  -moz-box-shadow: 0 0 50px #ccc; 
+  -webkit-box-shadow: 0 0 50px #ccc;
+   box-shadow: 0 0 50px #ccc; 
+ }
+
+#connect {
+  background: red;
+}
+
+/*.col-md-4 {
+  margin-top: 10px;
+}*/
 
 /*------ Mixins -----*/
 @mixin border-radiuses($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
@@ -496,10 +581,13 @@ body {
 }
 
 .wrapper-top {
-  width:500px;
-  margin-top: 50px;
+/*  width:500px;
+  margin-top: 55px;
+  margin-right: 0px;
   float: right;
+  color: #fff;*/
 }
+
 .sm {
   width: 100%;
   height:60px;
